@@ -1,16 +1,13 @@
-import logo from './static/go-parks-logo.png';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import ParkSelectScreen from './components/container/ParkSelectScreen';
+import SplashScreen from './components/container/SplashScreen';
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: 'lightgreen' }}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <Switch>
+      <Route path="/" component={SplashScreen} exact />
+      <Route path="/park_select" component={ParkSelectScreen} expact />
+    </Switch>
   );
 }
 
