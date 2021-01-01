@@ -3,17 +3,23 @@ import styled from 'styled-components';
 export const PageComponent = styled.div`
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+`;
+
+export const BodyCenterComponent = styled.div`
+  height: 100%;
+  width: 100%;
+  max-width: 414px;
+  background-color: yellow;
+  overflow-y: scroll;
 `;
 
 export const BodyComponent = styled.div`
-  width: 100%;
-  max-width: 414px;
+  height: calc(100vh - 163px);
   overflow-y: scroll;
-  flex: 1;
-  background-color: yellow;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const FooterComponent = styled.div`
