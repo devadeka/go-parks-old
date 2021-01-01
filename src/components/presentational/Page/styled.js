@@ -18,9 +18,9 @@ export const BodyComponent = styled.div`
 
 export const FooterComponent = styled.div`
   width: 100%;
-  max-width: 414px;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 3px solid lightgreen;
 `;

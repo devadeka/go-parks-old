@@ -5,12 +5,15 @@ import {
   BodyComponent,
   FooterComponent,
 } from '../../presentational/Page/styled';
+import { SelectButton } from './styled';
 
 const ParkSelect = () => (
   <PageComponent>
     <Header />
     <BodyComponent></BodyComponent>
-    <FooterComponent>BUTTON</FooterComponent>
+    <FooterComponent>
+      <SelectButton>SELECT</SelectButton>
+    </FooterComponent>
   </PageComponent>
 );
 
