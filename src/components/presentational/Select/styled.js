@@ -5,4 +5,9 @@ import MUIFormControl from '@material-ui/core/FormControl';
 
 export const Select = styled(MUISelect)``;
 export const MenuItem = styled(MUIMenuItem)``;
-export const FormControl = styled(MUIFormControl)``;
+export const FormControl = styled(MUIFormControl)`
+  &&& {
+    width: 100%;
+    margin-top: 150px;
+  }
+`;

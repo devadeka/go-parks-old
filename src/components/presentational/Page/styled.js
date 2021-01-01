@@ -9,7 +9,6 @@ export const BodyCenterComponent = styled.div`
   height: 100%;
   width: 100%;
   max-width: 414px;
-  background-color: yellow;
   overflow-y: scroll;
 `;
 
