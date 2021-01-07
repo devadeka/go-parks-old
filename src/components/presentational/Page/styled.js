@@ -9,11 +9,10 @@ export const BodyCenterComponent = styled.div`
   height: 100%;
   width: 100%;
   max-width: 414px;
-  overflow-y: scroll;
 `;
 
 export const BodyComponent = styled.div`
-  height: calc(100vh - 163px);
+  height: calc(100vh - ${({ noFooter }) => (noFooter ? '90px' : '163px')});
   overflow-y: scroll;
   padding: 10px;
   display: flex;
