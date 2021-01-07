@@ -12,7 +12,7 @@ export const BodyCenterComponent = styled.div`
 `;
 
 export const BodyComponent = styled.div`
-  height: calc(100vh - 163px);
+  height: calc(100vh - ${({ noFooter }) => (noFooter ? '90px' : '163px')});
   overflow-y: scroll;
   padding: 10px;
   display: flex;
