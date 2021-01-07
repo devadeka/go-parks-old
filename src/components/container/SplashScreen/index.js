@@ -14,7 +14,7 @@ const ver = '1.43';
 const SplashScreen = () => {
   const [updatingStatus, setUpdatingStatus] = useState(0);
 
-  const maxCount = 21;
+  const maxCount = 7;
 
   useEffect(() => {
     const updateInterval = setInterval(

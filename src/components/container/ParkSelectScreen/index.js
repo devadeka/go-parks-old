@@ -12,9 +12,14 @@ import {
   MenuItem,
 } from '../../presentational/Select/styled';
 import Body from '../../presentational/Page/Body';
+import { useHistory } from 'react-router-dom';
 
 const ParkSelect = () => {
   const [selectedPark, setSelectedPark] = useState('');
+  const history = useHistory();
+  const handleSelect = () => {
+    history.push('/park/parkID123');
+  };
 
   const handleChange = (event) => {
     setSelectedPark(event.target.value);
@@ -38,7 +43,9 @@ const ParkSelect = () => {
         </FormControl>
       </Body>
       <FooterComponent>
-        <SelectButton disabled={selectedPark === ''}>SELECT</SelectButton>
+        <SelectButton onClick={handleSelect} disabled={selectedPark === ''}>
+          SELECT
+        </SelectButton>
       </FooterComponent>
     </PageComponent>
   );
